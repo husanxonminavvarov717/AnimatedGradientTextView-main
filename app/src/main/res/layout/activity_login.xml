@@ -1,0 +1,72 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".LoginActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="24dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="24dp" >
+
+        <com.mursaat.extendedtextview.AnimatedGradientTextView
+            android:id="@+id/animatedGradientTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/title"
+            android:textAllCaps="true"
+            android:textSize="95sp"
+            app:angle="45"
+            app:colors="@array/funny_colors"
+            app:customFont="@string/fonts_otf"
+            app:maxFPS="30"
+            app:simultaneousColors="4"
+            app:speed="1000" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autofillHints="emailAddress"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:maxWidth="400dp"
+            android:minHeight="48dp"
+            android:paddingVertical="12dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autofillHints="password"
+            android:hint="@string/prompt_password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:maxWidth="400dp"
+            android:minHeight="48dp"
+            android:paddingVertical="12dp" />
+
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:maxWidth="400dp"
+            android:minHeight="48dp"
+            android:text="@string/action_sign_in"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>
