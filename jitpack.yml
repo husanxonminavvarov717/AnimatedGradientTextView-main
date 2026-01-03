@@ -1,0 +1,11 @@
+jdk:
+  - openjdk17
+
+before_install:
+  - sdk install java 17.0.12-oracle || true
+
+build:
+  gradle:
+    build-file: library/build.gradle
+    tasks:
+      - publishToMavenLocal
